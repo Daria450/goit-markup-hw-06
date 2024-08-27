@@ -94,12 +94,14 @@ ul {
     background-color: #404BBF;
 }
 
-.heading-two {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+.second-section .heading-two {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
+    text-align: center;
     color: #2e2f42;
+    text-transform: capitalize;
 }
 
 .second-section .headig-three {
