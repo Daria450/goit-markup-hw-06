@@ -40,39 +40,47 @@ ul {
     padding: 120px 0;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* Header */
 
 .header {
+
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header .container {
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #e7e9fc;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .header .navigation {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
     flex-direction: row;
-    gap: 76px;
 }
 
 .header .navigation-list {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
     gap: 40px;
 }
 
-.address .contacts {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 40px;
-}
+
 
 .link-logo {
     font-family: "Raleway", sans-serif;
@@ -82,18 +90,21 @@ ul {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
+    padding: 24px 0 24px;
 }
 
 .studio {
     color: #2e2f42;
 }
 
-.navigation .link {
+.navigation-list .link {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0 24px;
 }
 
 .navigation .link:hover {
@@ -114,6 +125,7 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding: 24px 0 24px;
 }
 
 .address .link:hover {
@@ -124,16 +136,32 @@ ul {
     color: #404bbf
 }
 
+.address {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.address .contacts {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.contacts .link {}
+
 /* First section */
 
 .first-section {
     background: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .first-section .container {
     display: flex;
-    padding-top: 188px;
-    padding-bottom: 188px;
+
     align-items: center;
     flex-direction: column;
     gap: 48px;
@@ -162,7 +190,8 @@ ul {
     padding: 16px 32px;
     border-radius: 4px;
     display: block;
-    max-width: 170px;
+    min-width: 169px;
+    height: 56px;
 }
 
 .first-section .button:hover {
@@ -192,6 +221,10 @@ ul {
     display: none;
 }
 
+.feature {
+    width: calc((100% - 72px) / 4);
+}
+
 .second-section-list .heading-three {
     font-weight: 500;
     font-size: 20px;
@@ -215,11 +248,8 @@ ul {
     background: #F4F4FD;
 }
 
-.third-section .container {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    gap: 72px;
+.third-section .heading-two {
+    margin-bottom: 72px;
 }
 
 .third-section-list {
@@ -240,7 +270,6 @@ ul {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 8px;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -263,6 +292,7 @@ ul {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .third-section .text {
@@ -280,7 +310,6 @@ ul {
     display: flex;
     flex-direction: column;
     align-content: center;
-    gap: 72px;
 }
 
 .fourth-section .heading-two {
@@ -290,13 +319,15 @@ ul {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    text-transform: capitalize
+    text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .fourth-section-list {
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    gap: 48px;
+    row-gap: 48px;
     flex-wrap: wrap;
 }
 
@@ -309,7 +340,6 @@ ul {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    gap: 8px;
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
@@ -323,6 +353,7 @@ ul {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px
 }
 
 .fourth-section-list .text {
@@ -337,14 +368,13 @@ ul {
 
 .footer {
     background: #2e2f42;
+    padding: 100px 0 100px;
 }
 
 .footer .container {
     display: flex;
     flex-direction: column;
     align-content: flex-start;
-    gap: 16px;
-    padding: 100px 0;
 }
 
 .footer .link-logo {
@@ -354,6 +384,8 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer .link-logo .studio {
