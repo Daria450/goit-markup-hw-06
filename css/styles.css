@@ -326,7 +326,7 @@ ul {
 .fourth-section-list {
     display: flex;
     flex-direction: row;
-    gap: 48px;
+    column-gap: 24px;
     row-gap: 48px;
     flex-wrap: wrap;
 }
@@ -377,7 +377,7 @@ ul {
     align-content: flex-start;
 }
 
-.footer .link-logo {
+.footer .container .link-logo {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
