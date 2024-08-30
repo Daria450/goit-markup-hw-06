@@ -105,8 +105,8 @@ ul {
     padding: 24px 0 24px;
     position: relative;
     transition-property: color;
-    transition-duration: 500ms;
-    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation .link:hover {
@@ -115,8 +115,8 @@ ul {
 
 .navigation .link::after {
     transition-property: background-color;
-    transition-duration: 500ms;
-    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     content: "";
 }
@@ -150,8 +150,8 @@ ul {
     color: #434455;
     padding: 24px 0 24px;
     transition-property: color;
-    transition-duration: 500ms;
-    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address .link:hover {
@@ -226,8 +226,8 @@ ul {
     min-width: 169px;
     height: 56px;
     transition-property: background-color;
-    transition-duration: 500ms;
-    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -369,8 +369,8 @@ ul {
     border-radius: 50%;
     background-color: #4d5ae5;
     transition-property: background-color;
-    transition-duration: 500ms;
-    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -409,8 +409,8 @@ ul {
 
 .fourth-section-list .card {
     transition-property: box-shadow;
-    transition-duration: 500ms;
-    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fourth-section-list .card:hover {
@@ -437,8 +437,8 @@ ul {
     left: 0;
     transform: translateY(100%);
     transition-property: transform;
-    transition-duration: 500ms;
-    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -541,11 +541,10 @@ ul {
     border-radius: 50%;
     background-color: #4d5ae5;
     transition-property: background-color;
-    transition-duration: 500ms;
-    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links .link:hover {
     background-color: #31d0aa;
-    ;
 }
