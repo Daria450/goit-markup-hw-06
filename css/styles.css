@@ -388,7 +388,7 @@ ul {
     background-color: #404bbf;
 }
 
-.team-card:focus .link {
+.team-card .link:focus {
     background-color: #404bbf;
 }
 
