@@ -40,8 +40,8 @@ input {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: 141px;
-    margin-right: 141px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section {
@@ -139,10 +139,11 @@ input {
     content: "";
 }
 
+/*
 .navigation .link:hover::after {
     opacity: 100%;
 }
-
+*/
 .navigation .link:focus {
     color: #404bbf;
 }
@@ -773,6 +774,9 @@ input {
     gap: 4px;
     margin-bottom: 8px;
     position: relative;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal .form .label:last-of-type {
@@ -793,7 +797,9 @@ input {
     height: 40px;
     padding-left: 38px;
     padding-right: 8px;
-
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
