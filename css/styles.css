@@ -28,6 +28,14 @@ ul {
     padding-left: 0;
 }
 
+button {
+    border: none;
+}
+
+input {
+    outline: none;
+}
+
 .container {
     max-width: 1158px;
     padding-left: 15px;
@@ -189,7 +197,7 @@ ul {
     background-size: cover;
     padding-top: 188px;
     padding-bottom: 188px;
-    max-width: 1440px;
+    /*  max-width: 1440px;*/
     margin: 0 auto;
 }
 
@@ -268,9 +276,6 @@ ul {
     background: #f4f4fd;
     padding: 24px 100px;
     margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 112px;
 }
 
@@ -538,7 +543,9 @@ ul {
     color: #f4f4fd;
 }
 
-
+.footer .social-links {
+    padding-right: 80px;
+}
 
 .social-links .social-links-heading {
     font-weight: 500;
@@ -579,4 +586,294 @@ ul {
 
 .social-links .icon {
     fill: #f4f4fd;
+}
+
+.footer .subscribe {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footer .subscribe-label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    gap: 16px;
+}
+
+.footer .subscribe-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
+    border-radius: 4px;
+    padding: 8px 24px;
+    background: #4d5ae5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.footer .subscribe-button .icon {
+    fill: #fff;
+}
+
+.footer .subscribe-button:hover {
+    background-color: #404BBF
+}
+
+.footer .subscribe-button:focus {
+    background-color: #404BBF;
+}
+
+.footer .subscribe-input {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: #2e2f42;
+    padding: 8px 0 8px 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+.footer .subscribe-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+.footer .subscribe-input:focus {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid #4d5ae5;
+    border-radius: 4px;
+}
+
+.footer .subscribe-input:focus-within {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid #4d5ae5;
+    border-radius: 4px;
+}
+
+.footer .subscribe-input:auto-fill {
+    color: #fff;
+    border: 1px solid #4d5ae5;
+    background-color: #2e2f42;
+}
+
+/*Modal*/
+
+.modal-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: rgba(46, 47, 66, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    background: #fcfcfc;
+    max-width: 408px;
+    max-height: 584px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal .close {
+    align-self: flex-end;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 100%;
+}
+
+.modal .close:hover {
+    background-color: #404bbf;
+    border: 1px solid #404bbf;
+
+}
+
+.modal .close:hover .icon {
+    fill: #fff;
+}
+
+.modal .close .icon {
+    fill: #2e2f42;
+}
+
+.modal .form-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 16px;
+}
+
+.modal .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal .form .label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    gap: 4px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.modal .form .label:last-of-type {
+    display: inline-block;
+}
+
+.modal .input-svg {
+    fill: #2e2f42;
+    position: absolute;
+    top: 26px;
+    left: 16px;
+}
+
+.modal .input {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+    padding-left: 38px;
+    padding-right: 8px;
+
+}
+
+
+
+
+.modal .input:focus-within {
+    border: 1px solid #4d5ae5;
+}
+
+.modal .label:focus-within .input-svg {
+    fill: #4d5ae5;
+}
+
+
+
+.modal .textarea {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    outline: none;
+    padding: 8px 16px;
+}
+
+.modal .textarea::-webkit-resizer {
+    display: none;
+}
+
+.modal .textarea:focus-within {
+    border: 1px solid #4d5ae5;
+}
+
+.modal .checkbox-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    margin-bottom: 24px;
+}
+
+.modal .checkbox-label .link {
+    line-height: 1.33333;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+    cursor: pointer;
+}
+
+.modal .checkbox {
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+.modal .button {
+    align-self: center;
+    border-radius: 4px;
+    padding: 16px 32px;
+    background: #4d5ae5;
+    max-width: 169px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal .button:hover {
+    background-color: #404BBF
+}
+
+.modal .button:focus {
+    background-color: #404BBF;
 }
