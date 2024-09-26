@@ -708,6 +708,11 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+}
+
+.is-open {
+    opacity: 100%;
 }
 
 .modal {
@@ -732,6 +737,10 @@ input {
     cursor: pointer;
     padding: 8px;
     border-radius: 100%;
+    transition-property: border;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal .close:hover {
