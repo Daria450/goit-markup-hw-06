@@ -112,7 +112,10 @@ input {
 }
 
 .mobile-menu {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
 }
 
 /*---------------------------------Mobile menu--------------*/
