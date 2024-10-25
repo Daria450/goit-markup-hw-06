@@ -1113,11 +1113,13 @@ input {
 
     .footer .footer-text {
         margin-right: 120px;
+        margin-bottom: 0;
     }
 
     .footer .text {
         max-width: 264px;
         margin-bottom: 0px;
+
     }
 
     .footer .social-links {
